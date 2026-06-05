@@ -8,6 +8,32 @@ This project evaluates whether traditional labor-market tightness measures, espe
 
 The main finding is that labor-market tightness did not become useless after COVID-19, but it became less stable, more conditional, and more target-dependent. The job-openings-to-unemployment ratio remains most useful for wage-growth forecasting, especially around the 6-month horizon. It is not a reliable standalone predictor of CPI or PCE inflation after COVID-19. Inflation forecasting is more persistence-driven and more sensitive to regime shifts than wage forecasting.
 
+## Reproducibility
+This pipeline starts at EDA and uses committed data by default. The first notebook pulls data from FRED and should only be run when you have a FRED API key.
+
+### Windows
+```
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -e .
+python scripts/run_pipeline.py
+```
+### macOS/Linux
+```
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e .
+python scripts/run_pipeline.py
+```
+
+### Optional: refresh source data
+Requires internet access and FRED_API_KEY.
+```
+python scripts/run_pipeline.py --refresh-data
+```
+
 ---
 ## Overview
 
