@@ -1,15 +1,9 @@
-# Forecasting Under Regime Instability: Labor Market Signals After COVID-19
+# Currently being Modified
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-This project evaluates whether traditional labor-market tightness measures, especially the job-openings-to-unemployment ratio, retained stable predictive value for future inflation and wage growth after the COVID-19 shock.
-
-The main finding is that labor-market tightness did not become useless after COVID-19, but it became less stable, more conditional, and more target-dependent. The job-openings-to-unemployment ratio remains most useful for wage-growth forecasting, especially around the 6-month horizon. It is not a reliable standalone predictor of CPI or PCE inflation after COVID-19. Inflation forecasting is more persistence-driven and more sensitive to regime shifts than wage forecasting.
-
-## Reproducibility
-This pipeline starts at EDA and uses committed data by default. The first notebook pulls data from FRED and should only be run when you have a FRED API key.
 
 ### Windows
 ```
